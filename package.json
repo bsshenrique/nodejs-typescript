@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-typescript",
+  "description": "A boilerplate project that helps you to run Node.js using TypeScript.",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "eslint": "eslint --ext .ts ./src/**/*",
+    "prettier-check": "prettier './src/**/*.ts' --check",
+    "prettier-write": "prettier './src/**/*.ts' --write",
+    "start": "node --loader ts-node/esm --watch ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "Henrique",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@fastify/helmet": "^11.1.1",
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "prettier": "3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}
