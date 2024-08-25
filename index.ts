@@ -2,7 +2,7 @@ import http from 'node:http';
 
 process.loadEnvFile('./development.env');
 
-const SERVER_HOST = process.env.SERVER_HOST || '127.0.0.1';
+const SERVER_HOST = process.env.SERVER_HOST || '0.0.0.0';
 const SERVER_PORT = Number(process.env.SERVER_PORT || 3000);
 
 const server = http.createServer();
